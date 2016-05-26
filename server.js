@@ -3,7 +3,7 @@ var inert = require('inert');
 
 var server = new hapi.Server();
 server.connection({
-    port: ~~process.env.PORT || 8001
+    port: 'mongodb://admin:admin@ds051848.mlab.com:51848/rgdbb'
 });
 
 server.register(inert, function(err){
