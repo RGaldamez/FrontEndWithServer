@@ -1,7 +1,7 @@
 angular.module('AngularScaffold.Services').factory('gameService', ['$http',
 	function($http){
 		$http.defaults.withCredentials = true;
-		var baseUrl = 'http://localhost:8000';
+		var baseUrl = 'mongodb://admin:admin@ds051848.mlab.com:51848/rgdbb';
 		return {
 				GetGames: function(){
 					return $http.get(baseUrl + "/getGames");
