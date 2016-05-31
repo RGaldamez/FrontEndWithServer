@@ -1,7 +1,7 @@
 angular.module('AngularScaffold.Services').factory('gameService', ['$http',
 	function($http){
 		$http.defaults.withCredentials = true;
-		var baseUrl = 'mongodb://admin:admin@ds051848.mlab.com:51848/rgdbb';
+		var baseUrl = 'https://gamesappbackend.herokuapp.com';
 		return {
 				GetGames: function(){
 					return $http.get(baseUrl + "/getGames");
